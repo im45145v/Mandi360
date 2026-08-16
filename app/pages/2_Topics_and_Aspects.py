@@ -13,14 +13,14 @@ import plotly.express as px
 import streamlit as st
 
 from app.data_loader import load_review_aspects, load_topic_model
-from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
+from app.theme import CHART_SEQUENCE, apply_theme, banner, branch_label, business_dataframe, data_tag
 
-apply_theme("Topics & Aspects")
-banner("Topics & Aspects", "Recurring customer themes and experience dimensions")
+apply_theme("Customer Themes")
+banner("Customer Themes", "Recurring customer topics and experience areas")
 
 st.markdown(
-    data_tag("derived") + " Themes are discovered from review language; experience dimensions "
-    "use a transparent keyword baseline. These are signals for management review, not final labels.",
+    data_tag("derived") + " Themes are discovered from review language; experience areas "
+    "use a transparent keyword review. Treat them as management signals, not final labels.",
     unsafe_allow_html=True,
 )
 
@@ -30,20 +30,23 @@ if topic_model:
         f"Themes identified: {topic_model['params']['num_topics_fitted']} · "
         f"Reviews analyzed: {topic_model['params']['documents_used']:,}"
     )
-    for topic in topic_model["topics"]:
-        with st.expander(f"Theme {topic['topic_id'] + 1} — representative terms: {', '.join(topic['top_terms'][:5])}"):
-            df = pd.DataFrame({"term": topic["top_terms"], "weight": topic["top_term_weights"]})
-            fig = px.bar(df, x="weight", y="term", orientation="h", color_discrete_sequence=[CHART_SEQUENCE[0]])
+    for display_number, topic in enumerate(topic_model["topics"], start=1):
+        with st.expander(f"Theme {display_number}: {', '.join(topic['top_terms'][:5]).title()}"):
+            df = pd.DataFrame({"customer words": topic["top_terms"][:8], "relative importance": topic["top_term_weights"][:8]})
+            fig = px.bar(df, x="relative importance", y="customer words", orientation="h", color_discrete_sequence=[CHART_SEQUENCE[0]])
             fig.update_layout(yaxis={"categoryorder": "total ascending"})
+            fig.update_xaxes(visible=False)
             st.plotly_chart(fig, use_container_width=True)
 else:
-    st.warning("Topic model not available yet. Run `python -m src.pipeline`.")
+    st.warning("Customer themes are not available yet. Refresh the latest review analysis first.")
 
-st.subheader("Experience Dimensions")
+st.subheader("Experience Areas")
 aspects = load_review_aspects()
 if not aspects.empty:
-    branches = ["All"] + sorted(aspects["branch_id"].dropna().unique().tolist())
-    selected = st.selectbox("Branch", branches)
+    branch_ids = sorted(aspects["branch_id"].dropna().unique().tolist())
+    branch_options = {"All": "All"} | {branch_label(branch_id): branch_id for branch_id in branch_ids}
+    selected_label = st.selectbox("Branch", list(branch_options.keys()))
+    selected = branch_options[selected_label]
     filtered = aspects if selected == "All" else aspects[aspects["branch_id"] == selected]
 
     agg = (
@@ -55,12 +58,20 @@ if not aspects.empty:
     col1, col2 = st.columns(2)
     with col1:
         fig = px.bar(agg, x="aspect", y="mention_count", color="aspect", color_discrete_sequence=CHART_SEQUENCE)
-        fig.update_layout(showlegend=False, title="Aspect Mention Volume")
+        fig.update_layout(showlegend=False, title="Customer Mention Volume")
+        fig.update_xaxes(title="experience area")
+        fig.update_yaxes(title="mentions")
         st.plotly_chart(fig, use_container_width=True)
     with col2:
         fig2 = px.bar(agg, x="aspect", y="average_sentiment_score", color="aspect", color_discrete_sequence=CHART_SEQUENCE)
-        fig2.update_layout(showlegend=False, title="Average Aspect Sentiment")
+        fig2.update_layout(showlegend=False, title="Average Customer Mood by Area")
+        fig2.update_xaxes(title="experience area")
+        fig2.update_yaxes(title="customer mood indicator")
         st.plotly_chart(fig2, use_container_width=True)
-    st.dataframe(agg, use_container_width=True)
+    st.dataframe(
+        business_dataframe(agg, ["aspect", "mention_count", "average_sentiment_score"]),
+        use_container_width=True,
+        hide_index=True,
+    )
 else:
-    st.info("Aspect table not available yet.")
+    st.info("Experience-area summary is not available yet.")

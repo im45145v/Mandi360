@@ -12,24 +12,26 @@ import plotly.express as px
 import streamlit as st
 
 from app.data_loader import load_anomalies, load_branch_summary, load_nlp_reviews
-from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
+from app.theme import CHART_SEQUENCE, apply_theme, banner, branch_label, business_dataframe, data_tag
 from app.visuals import show_wordcloud
 
 apply_theme("Sentiment")
 banner("Customer Sentiment", "How customers feel about the experience, by branch and time")
 st.markdown(
-    data_tag("derived") + " Sentiment is an initial language-based signal, not a validated "
+    data_tag("derived") + " Customer mood is an initial language-based signal, not a validated "
     "customer-satisfaction measure. Use the review samples to verify the pattern.",
     unsafe_allow_html=True,
 )
 
 reviews = load_nlp_reviews()
 if reviews.empty:
-    st.warning("Run `python -m src.pipeline` first to generate NLP results.")
+    st.warning("Customer language insights are not available yet. Refresh the latest review analysis first.")
     st.stop()
 
-branches = ["All"] + sorted(reviews["branch_id"].dropna().unique().tolist())
-selected = st.selectbox("Branch", branches)
+branch_ids = sorted(reviews["branch_id"].dropna().unique().tolist())
+branch_options = {"All": "All"} | {branch_label(branch_id): branch_id for branch_id in branch_ids}
+selected_label = st.selectbox("Branch", list(branch_options.keys()))
+selected = branch_options[selected_label]
 filtered = reviews if selected == "All" else reviews[reviews["branch_id"] == selected]
 
 col1, col2 = st.columns(2)
@@ -38,7 +40,7 @@ with col1:
     dist.columns = ["sentiment_label", "count"]
     fig = px.pie(
         dist, names="sentiment_label", values="count",
-        color_discrete_sequence=CHART_SEQUENCE, title="Customer Feedback Distribution",
+        color_discrete_sequence=CHART_SEQUENCE, title="Customer Mood Mix",
     )
     st.plotly_chart(fig, use_container_width=True)
 
@@ -48,7 +50,8 @@ with col2:
         filtered.groupby("branch_id")["sentiment_score"].mean().reset_index(),
         x="branch_id", y="sentiment_score",
         color="branch_id", color_discrete_sequence=CHART_SEQUENCE,
-        title="Average Customer Sentiment Signal by Branch",
+        title="Average Customer Mood by Branch",
+        labels={"branch_id": "branch", "sentiment_score": "customer mood indicator"},
     )
     fig2.update_layout(showlegend=False)
     st.plotly_chart(fig2, use_container_width=True)
@@ -72,6 +75,7 @@ if not anomalies.empty:
     fig3 = px.line(
         trend, x="month", y="average_sentiment_score", color="branch_id",
         color_discrete_sequence=CHART_SEQUENCE, markers=True,
+        labels={"month": "month", "average_sentiment_score": "customer mood indicator", "branch_id": "branch"},
     )
     st.plotly_chart(fig3, use_container_width=True)
 else:
@@ -79,6 +83,7 @@ else:
 
 st.subheader("Review Examples")
 st.dataframe(
-    filtered[["review_id", "branch_id", "rating", "sentiment_label", "sentiment_score", "review_text"]].head(200),
+    business_dataframe(filtered, ["branch_name", "rating", "sentiment_label", "review_text"]).head(200),
     use_container_width=True,
+    hide_index=True,
 )

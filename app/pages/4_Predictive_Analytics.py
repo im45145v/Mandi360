@@ -13,19 +13,19 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from app.data_loader import load_anomalies, load_forecasts
-from app.theme import GOLD, MAROON, TEAL, apply_theme, banner, data_tag
+from app.theme import GOLD, MAROON, TEAL, apply_theme, banner, branch_label, data_tag
 
-apply_theme("Predictive Analytics")
-banner("Looking Ahead", "Expected rating direction and branch risk signals")
+apply_theme("Predictive Analysis")
+banner("Predictive Analysis: Business Outlook", "Expected rating direction and branch risk signals")
 st.markdown(
-    data_tag("predicted") + " Forecasts extend historical patterns and are not certainties. "
+    data_tag("predicted") + " This page supports the Predictive Analysis subject. Forecasts extend historical patterns and are not certainties. "
     "Use them as an early-warning signal alongside current customer feedback.",
     unsafe_allow_html=True,
 )
 
 forecasts = load_forecasts()
 if not forecasts:
-    st.warning("Forecast results not available yet. Run `python -m src.pipeline`.")
+    st.warning("Outlook results are not available yet. Refresh the latest review analysis first.")
     st.stop()
 
 anomalies = load_anomalies()
@@ -33,13 +33,11 @@ risk_colors = {"stable": TEAL, "watch": GOLD, "elevated": MAROON}
 
 for branch in forecasts["branches_forecasted"]:
     branch_id = branch["branch_id"]
-    st.subheader(f"{branch_id.replace('_', ' ').title()} — risk signal: {branch['risk_level'].upper()}")
+    st.subheader(f"{branch_label(branch_id)} — management attention: {branch['risk_level'].upper()}")
 
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Expected monthly direction", branch["trend_slope_per_month"])
-    if branch["evaluation"]:
-        col2.metric("Forecast error (typical)", branch["evaluation"]["mae"])
-        col3.metric("Forecast error (larger misses)", branch["evaluation"]["rmse"])
+    col1, col2 = st.columns(2)
+    col1.metric("Management Attention", branch["risk_level"].title())
+    col2.metric("Expected Monthly Direction", branch["trend_slope_per_month"])
 
     history = anomalies[anomalies["branch_id"] == branch_id].sort_values("month") if not anomalies.empty else pd.DataFrame()
     fig = go.Figure()
@@ -52,13 +50,14 @@ for branch in forecasts["branches_forecasted"]:
         x=forecast_months + forecast_months[::-1],
         y=[row["upper_bound"] for row in branch["forecast"]] + [row["lower_bound"] for row in branch["forecast"]][::-1],
         fill="toself", fillcolor="rgba(166,25,46,0.12)", line=dict(color="rgba(0,0,0,0)"),
-        name="95% prediction interval",
+        name="Likely range",
     ))
-    fig.update_layout(title="Observed rating history + forecast", plot_bgcolor="white", paper_bgcolor="white")
+    fig.update_layout(title="Rating History and Expected Direction", plot_bgcolor="white", paper_bgcolor="white")
+    fig.update_yaxes(title="average rating")
     st.plotly_chart(fig, use_container_width=True)
 
 if forecasts.get("branches_skipped_insufficient_history"):
     st.info(
-        "Skipped (insufficient monthly history): "
-        + ", ".join(row["branch_id"] for row in forecasts["branches_skipped_insufficient_history"])
+        "Not enough monthly history yet for: "
+        + ", ".join(branch_label(row["branch_id"]) for row in forecasts["branches_skipped_insufficient_history"])
     )

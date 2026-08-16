@@ -26,22 +26,21 @@ from app.data_loader import (
     load_review_topics,
     load_topic_model,
 )
-from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
+from app.theme import CHART_SEQUENCE, apply_theme, banner, branch_label, business_dataframe, data_tag
 from app.visuals import show_wordcloud
 
 apply_theme("Negative Insights")
-banner("Negative Insights", "Fault-finding: what negative reviews reveal, by branch and period")
+banner("Negative Feedback Insights", "CRM-focused view of complaints, service gaps, and recovery priorities")
 st.markdown(
     data_tag("real") + data_tag("derived")
-    + " Rating buckets below are REAL data. Sentiment/aspect/topic breakdowns are "
-    "DERIVED from an unvalidated lexicon/ML baseline and describe correlation, not "
-    "confirmed cause. Verify before acting.",
+    + " Rating buckets below come from collected reviews. Customer mood, experience-area, and theme breakdowns "
+    "are analytical signals that describe correlation, not confirmed cause. Verify before acting.",
     unsafe_allow_html=True,
 )
 
 reviews = load_nlp_reviews()
 if reviews.empty:
-    st.warning("Run `python -m src.pipeline` first to generate NLP results.")
+    st.warning("Negative feedback insights are not available yet. Refresh the latest review analysis first.")
     st.stop()
 
 reviews = reviews.copy()
@@ -54,11 +53,13 @@ reviews["rating_bucket"] = pd.cut(
 )
 
 branches = sorted(reviews["branch_id"].dropna().unique().tolist())
+branch_labels = {branch_label(branch_id): branch_id for branch_id in branches}
 months = sorted(m for m in reviews["review_month"].dropna().unique().tolist() if m != "NaT")
 
 filter_col1, filter_col2 = st.columns([1, 2])
 with filter_col1:
-    selected_branches = st.multiselect("Branches", branches, default=branches)
+    selected_branch_labels = st.multiselect("Branches", list(branch_labels.keys()), default=list(branch_labels.keys()))
+    selected_branches = [branch_labels[label] for label in selected_branch_labels]
 with filter_col2:
     if months:
         start_month, end_month = st.select_slider("Period", options=months, value=(months[0], months[-1]))
@@ -93,8 +94,10 @@ bucket_counts = (
 )
 fig = px.bar(
     bucket_counts, x="branch_id", y="count", color="rating_bucket", barmode="group",
-    color_discrete_sequence=CHART_SEQUENCE, title="Rating Buckets by Branch (real ratings)",
+    color_discrete_sequence=CHART_SEQUENCE, title="Rating Buckets by Branch",
+    labels={"branch_id": "branch", "count": "reviews", "rating_bucket": "rating group"},
 )
+fig.update_xaxes(ticktext=[branch_label(value) for value in bucket_counts["branch_id"].unique()], tickvals=bucket_counts["branch_id"].unique())
 st.plotly_chart(fig, use_container_width=True)
 
 st.subheader("Words Customers Use")
@@ -119,8 +122,8 @@ with cloud_col2:
         "No positive review text is available in this scope.",
     )
 
-st.subheader("Negative Ratio Trend Over Time")
-st.markdown(data_tag("derived") + " Monthly negative-sentiment ratio (lexicon baseline).", unsafe_allow_html=True)
+st.subheader("Complaint Share Trend Over Time")
+st.markdown(data_tag("derived") + " Monthly share of reviews with negative customer mood.", unsafe_allow_html=True)
 anomalies = load_anomalies()
 if not anomalies.empty:
     trend = anomalies[anomalies["branch_id"].isin(selected_branches)]
@@ -128,13 +131,14 @@ if not anomalies.empty:
         trend = trend[(trend["month"] >= start_month) & (trend["month"] <= end_month)]
     fig2 = px.line(
         trend, x="month", y="negative_ratio", color="branch_id", markers=True,
-        color_discrete_sequence=CHART_SEQUENCE, title="Monthly Negative Sentiment Ratio by Branch",
+        color_discrete_sequence=CHART_SEQUENCE, title="Monthly Complaint Share by Branch",
+        labels={"month": "month", "negative_ratio": "complaint share", "branch_id": "branch"},
     )
     st.plotly_chart(fig2, use_container_width=True)
 else:
     st.info("Monthly negative-ratio aggregates not available yet.")
 
-st.subheader("Which Aspects Drive Negative Feedback")
+st.subheader("Experience Areas Behind Negative Feedback")
 st.markdown(data_tag("derived"), unsafe_allow_html=True)
 aspects = load_review_aspects()
 if not aspects.empty:
@@ -165,23 +169,29 @@ if not aspects.empty:
     with aspect_col1:
         fig3 = px.bar(
             aspect_agg, x="aspect", y=["negative_mentions", "positive_mentions"], barmode="group",
-            color_discrete_sequence=CHART_SEQUENCE, title="Negative vs Positive Mentions by Aspect",
+            color_discrete_sequence=CHART_SEQUENCE, title="Negative vs Positive Mentions by Experience Area",
+            labels={"aspect": "experience area", "value": "mentions", "variable": "mention type"},
         )
         st.plotly_chart(fig3, use_container_width=True)
     with aspect_col2:
         fig4 = px.bar(
             aspect_agg, x="aspect", y="negative_share_pct", color="aspect",
             color_discrete_sequence=CHART_SEQUENCE, title="Share of Mentions that are Negative (%)",
+            labels={"aspect": "experience area", "negative_share_pct": "negative share %"},
         )
         fig4.update_layout(showlegend=False)
         st.plotly_chart(fig4, use_container_width=True)
-    st.dataframe(aspect_agg, use_container_width=True)
+    st.dataframe(
+        business_dataframe(aspect_agg, ["aspect", "negative_mentions", "positive_mentions", "negative_share_pct"]),
+        use_container_width=True,
+        hide_index=True,
+    )
 else:
     st.info("Aspect table not available yet.")
 
-st.subheader("Topics Over-Represented in Negative Reviews")
+st.subheader("Themes Over-Represented in Negative Reviews")
 st.markdown(
-    data_tag("derived") + " A negative representation score above 1 means the theme appears "
+    data_tag("derived") + " A concentration indicator above 1 means the theme appears "
     "more often in negative reviews than in the overall scoped set.",
     unsafe_allow_html=True,
 )
@@ -197,14 +207,27 @@ if not topics_df.empty and topic_model:
     lift_df = pd.DataFrame({"overall_share": overall_share, "negative_share": negative_share}).fillna(0.0)
     lift_df = lift_df.rename_axis("topic_id").reset_index()
     lift_df["negative_lift"] = (lift_df["negative_share"] / lift_df["overall_share"].replace(0, pd.NA)).round(2)
-    lift_df["top_terms"] = lift_df["topic_id"].map(topic_terms)
+    lift_df["theme"] = lift_df["topic_id"].map(topic_terms).str.title()
+    lift_df["overall_share"] = (lift_df["overall_share"] * 100).round(1)
+    lift_df["negative_share"] = (lift_df["negative_share"] * 100).round(1)
     lift_df = lift_df.sort_values("negative_lift", ascending=False)
-    st.dataframe(lift_df, use_container_width=True)
+    st.dataframe(
+        lift_df[["theme", "negative_lift", "negative_share", "overall_share"]].rename(
+            columns={
+                "theme": "theme",
+                "negative_lift": "complaint concentration",
+                "negative_share": "share of complaints %",
+                "overall_share": "overall share %",
+            }
+        ),
+        use_container_width=True,
+        hide_index=True,
+    )
 else:
     st.info("Topic assignments not available yet.")
 
-st.subheader("Suggested Fixes (Evidence-Ranked CRM Cases)")
-st.markdown(data_tag("derived") + " Deterministic, rule-based action tips — no LLM involved.", unsafe_allow_html=True)
+st.subheader("Suggested CRM Fixes")
+st.markdown(data_tag("derived") + " Evidence-ranked action tips based on repeat customer complaints.", unsafe_allow_html=True)
 crm_df = load_crm_cases()
 if not crm_df.empty:
     crm_scoped = crm_df[crm_df["branch_id"].isin(selected_branches)].copy()
@@ -213,12 +236,12 @@ if not crm_df.empty:
     crm_scoped = crm_scoped.sort_values(["_priority_rank", "priority_score"], ascending=[True, False])
     columns = [
         column for column in [
-            "branch_id", "issue", "priority", "mention_count", "average_sentiment_score", "recommended_action",
+            "branch_id", "issue", "priority", "mention_count", "recommended_action",
         ] if column in crm_scoped.columns
     ]
-    st.dataframe(crm_scoped[columns], use_container_width=True)
+    st.dataframe(business_dataframe(crm_scoped[columns]), use_container_width=True, hide_index=True)
 else:
-    st.info("CRM cases not available yet.")
+    st.info("CRM action priorities are not available yet.")
 
 st.subheader("Sample Negative Reviews")
 st.markdown(data_tag("real"), unsafe_allow_html=True)
@@ -227,6 +250,7 @@ sample_columns = [
     if column in negative_rating.columns
 ]
 st.dataframe(
-    negative_rating.sort_values("review_date", ascending=False)[sample_columns].head(200),
+    business_dataframe(negative_rating.sort_values("review_date", ascending=False)[sample_columns].head(200)),
     use_container_width=True,
+    hide_index=True,
 )
