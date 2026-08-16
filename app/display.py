@@ -75,4 +75,5 @@ def business_dataframe(df, columns=None):
     for column in ("aspect", "issue"):
         if column in display_df.columns:
             display_df[column] = display_df[column].map(experience_label)
-    return display_df.rename(columns=BUSINESS_COLUMN_LABELS)
+    display_df = display_df.rename(columns=BUSINESS_COLUMN_LABELS)
+    return display_df.loc[:, ~display_df.columns.duplicated()]
