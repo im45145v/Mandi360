@@ -1,0 +1,17 @@
+{
+  "record_count": 33275,
+  "branch_count": 3,
+  "date_range_start": "2017-05-20T01:01:25.714000+00:00",
+  "date_range_end": "2026-08-15T17:49:30.917000+00:00",
+  "average_rating": 4.1051,
+  "rating_distribution": {
+    "1.0": 2468,
+    "2.0": 1093,
+    "3.0": 3369,
+    "4.0": 9888,
+    "5.0": 16457
+  },
+  "text_available_count": 11765,
+  "text_missing_count": 21510,
+  "average_text_length_chars": 98.43
+}

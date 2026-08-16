@@ -1,0 +1,212 @@
+[
+  {
+    "topic_candidate_id": 1,
+    "term": "mandi",
+    "document_term_count": 6665,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 2,
+    "term": "good",
+    "document_term_count": 4502,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 3,
+    "term": "food",
+    "document_term_count": 4159,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 4,
+    "term": "place",
+    "document_term_count": 2586,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 5,
+    "term": "taste",
+    "document_term_count": 2242,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 6,
+    "term": "not",
+    "document_term_count": 2145,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 7,
+    "term": "mutton",
+    "document_term_count": 2092,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 8,
+    "term": "very",
+    "document_term_count": 1820,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 9,
+    "term": "best",
+    "document_term_count": 1635,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 10,
+    "term": "chicken",
+    "document_term_count": 1594,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 11,
+    "term": "service",
+    "document_term_count": 1380,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 12,
+    "term": "they",
+    "document_term_count": 1205,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 13,
+    "term": "try",
+    "document_term_count": 1049,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 14,
+    "term": "one",
+    "document_term_count": 948,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 15,
+    "term": "great",
+    "document_term_count": 920,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 16,
+    "term": "nice",
+    "document_term_count": 873,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 17,
+    "term": "experience",
+    "document_term_count": 855,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 18,
+    "term": "must",
+    "document_term_count": 783,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 19,
+    "term": "delicious",
+    "document_term_count": 747,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 20,
+    "term": "ambience",
+    "document_term_count": 745,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 21,
+    "term": "hyderabad",
+    "document_term_count": 744,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 22,
+    "term": "juicy",
+    "document_term_count": 738,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 23,
+    "term": "time",
+    "document_term_count": 736,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 24,
+    "term": "rice",
+    "document_term_count": 695,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 25,
+    "term": "awesome",
+    "document_term_count": 681,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 26,
+    "term": "tasty",
+    "document_term_count": 678,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 27,
+    "term": "worst",
+    "document_term_count": 649,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 28,
+    "term": "quality",
+    "document_term_count": 616,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 29,
+    "term": "visit",
+    "document_term_count": 609,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  },
+  {
+    "topic_candidate_id": 30,
+    "term": "ordered",
+    "document_term_count": 587,
+    "topic_method": "frequency_baseline_v1",
+    "topic_status": "candidate_requires_review"
+  }
+]

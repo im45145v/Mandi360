@@ -1,0 +1,337 @@
+month,branch_id,branch_name,review_count,average_rating,text_available_count,is_zero_volume,is_observed
+2017-05,banjara_hills,Banjara Hills,0,,0,True,False
+2017-06,banjara_hills,Banjara Hills,0,,0,True,False
+2017-07,banjara_hills,Banjara Hills,0,,0,True,False
+2017-08,banjara_hills,Banjara Hills,0,,0,True,False
+2017-09,banjara_hills,Banjara Hills,0,,0,True,False
+2017-10,banjara_hills,Banjara Hills,0,,0,True,False
+2017-11,banjara_hills,Banjara Hills,0,,0,True,False
+2017-12,banjara_hills,Banjara Hills,0,,0,True,False
+2018-01,banjara_hills,Banjara Hills,0,,0,True,False
+2018-02,banjara_hills,Banjara Hills,0,,0,True,False
+2018-03,banjara_hills,Banjara Hills,0,,0,True,False
+2018-04,banjara_hills,Banjara Hills,0,,0,True,False
+2018-05,banjara_hills,Banjara Hills,0,,0,True,False
+2018-06,banjara_hills,Banjara Hills,0,,0,True,False
+2018-07,banjara_hills,Banjara Hills,0,,0,True,False
+2018-08,banjara_hills,Banjara Hills,0,,0,True,False
+2018-09,banjara_hills,Banjara Hills,0,,0,True,False
+2018-10,banjara_hills,Banjara Hills,0,,0,True,False
+2018-11,banjara_hills,Banjara Hills,0,,0,True,False
+2018-12,banjara_hills,Banjara Hills,0,,0,True,False
+2019-01,banjara_hills,Banjara Hills,0,,0,True,False
+2019-02,banjara_hills,Banjara Hills,0,,0,True,False
+2019-03,banjara_hills,Banjara Hills,0,,0,True,False
+2019-04,banjara_hills,Banjara Hills,0,,0,True,False
+2019-05,banjara_hills,Banjara Hills,0,,0,True,False
+2019-06,banjara_hills,Banjara Hills,0,,0,True,False
+2019-07,banjara_hills,Banjara Hills,0,,0,True,False
+2019-08,banjara_hills,Banjara Hills,0,,0,True,False
+2019-09,banjara_hills,Banjara Hills,0,,0,True,False
+2019-10,banjara_hills,Banjara Hills,0,,0,True,False
+2019-11,banjara_hills,Banjara Hills,0,,0,True,False
+2019-12,banjara_hills,Banjara Hills,0,,0,True,False
+2020-01,banjara_hills,Banjara Hills,0,,0,True,False
+2020-02,banjara_hills,Banjara Hills,0,,0,True,False
+2020-03,banjara_hills,Banjara Hills,0,,0,True,False
+2020-04,banjara_hills,Banjara Hills,0,,0,True,False
+2020-05,banjara_hills,Banjara Hills,0,,0,True,False
+2020-06,banjara_hills,Banjara Hills,0,,0,True,False
+2020-07,banjara_hills,Banjara Hills,0,,0,True,False
+2020-08,banjara_hills,Banjara Hills,0,,0,True,False
+2020-09,banjara_hills,Banjara Hills,0,,0,True,False
+2020-10,banjara_hills,Banjara Hills,0,,0,True,False
+2020-11,banjara_hills,Banjara Hills,0,,0,True,False
+2020-12,banjara_hills,Banjara Hills,0,,0,True,False
+2021-01,banjara_hills,Banjara Hills,0,,0,True,False
+2021-02,banjara_hills,Banjara Hills,0,,0,True,False
+2021-03,banjara_hills,Banjara Hills,0,,0,True,False
+2021-04,banjara_hills,Banjara Hills,0,,0,True,False
+2021-05,banjara_hills,Banjara Hills,0,,0,True,False
+2021-06,banjara_hills,Banjara Hills,0,,0,True,False
+2021-07,banjara_hills,Banjara Hills,0,,0,True,False
+2021-08,banjara_hills,Banjara Hills,0,,0,True,False
+2021-09,banjara_hills,Banjara Hills,0,,0,True,False
+2021-10,banjara_hills,Banjara Hills,0,,0,True,False
+2021-11,banjara_hills,Banjara Hills,135,4.3481,43,False,True
+2021-12,banjara_hills,Banjara Hills,188,4.367,73,False,True
+2022-01,banjara_hills,Banjara Hills,154,4.2143,57,False,True
+2022-02,banjara_hills,Banjara Hills,41,4.3659,26,False,True
+2022-03,banjara_hills,Banjara Hills,75,4.1733,26,False,True
+2022-04,banjara_hills,Banjara Hills,46,4.1957,18,False,True
+2022-05,banjara_hills,Banjara Hills,43,4.3488,16,False,True
+2022-06,banjara_hills,Banjara Hills,46,4.1087,19,False,True
+2022-07,banjara_hills,Banjara Hills,31,4.1935,13,False,True
+2022-08,banjara_hills,Banjara Hills,50,4.14,23,False,True
+2022-09,banjara_hills,Banjara Hills,36,4.1667,16,False,True
+2022-10,banjara_hills,Banjara Hills,32,4.125,16,False,True
+2022-11,banjara_hills,Banjara Hills,45,4.1111,20,False,True
+2022-12,banjara_hills,Banjara Hills,53,3.8491,28,False,True
+2023-01,banjara_hills,Banjara Hills,40,4.0,22,False,True
+2023-02,banjara_hills,Banjara Hills,35,3.6,25,False,True
+2023-03,banjara_hills,Banjara Hills,42,3.9524,25,False,True
+2023-04,banjara_hills,Banjara Hills,27,4.0741,18,False,True
+2023-05,banjara_hills,Banjara Hills,43,3.907,28,False,True
+2023-06,banjara_hills,Banjara Hills,50,3.76,28,False,True
+2023-07,banjara_hills,Banjara Hills,52,4.0962,25,False,True
+2023-08,banjara_hills,Banjara Hills,56,3.3036,42,False,True
+2023-09,banjara_hills,Banjara Hills,37,4.0811,21,False,True
+2023-10,banjara_hills,Banjara Hills,36,4.1111,14,False,True
+2023-11,banjara_hills,Banjara Hills,35,4.1429,15,False,True
+2023-12,banjara_hills,Banjara Hills,36,4.3611,13,False,True
+2024-01,banjara_hills,Banjara Hills,39,3.7949,19,False,True
+2024-02,banjara_hills,Banjara Hills,70,4.0857,23,False,True
+2024-03,banjara_hills,Banjara Hills,73,4.1233,27,False,True
+2024-04,banjara_hills,Banjara Hills,59,3.9661,26,False,True
+2024-05,banjara_hills,Banjara Hills,87,3.7701,31,False,True
+2024-06,banjara_hills,Banjara Hills,74,3.7703,21,False,True
+2024-07,banjara_hills,Banjara Hills,76,4.0,30,False,True
+2024-08,banjara_hills,Banjara Hills,69,3.8696,25,False,True
+2024-09,banjara_hills,Banjara Hills,64,3.7969,28,False,True
+2024-10,banjara_hills,Banjara Hills,63,3.8254,26,False,True
+2024-11,banjara_hills,Banjara Hills,32,4.0938,15,False,True
+2024-12,banjara_hills,Banjara Hills,30,3.5667,20,False,True
+2025-01,banjara_hills,Banjara Hills,23,4.3043,13,False,True
+2025-02,banjara_hills,Banjara Hills,22,4.2273,9,False,True
+2025-03,banjara_hills,Banjara Hills,4,4.25,2,False,True
+2025-04,banjara_hills,Banjara Hills,11,4.0,4,False,True
+2025-05,banjara_hills,Banjara Hills,47,4.0426,20,False,True
+2025-06,banjara_hills,Banjara Hills,43,4.0698,22,False,True
+2025-07,banjara_hills,Banjara Hills,78,3.8077,35,False,True
+2025-08,banjara_hills,Banjara Hills,47,4.0213,19,False,True
+2025-09,banjara_hills,Banjara Hills,43,4.0233,23,False,True
+2025-10,banjara_hills,Banjara Hills,59,4.0508,23,False,True
+2025-11,banjara_hills,Banjara Hills,37,3.8378,19,False,True
+2025-12,banjara_hills,Banjara Hills,45,3.2889,26,False,True
+2026-01,banjara_hills,Banjara Hills,43,3.5349,27,False,True
+2026-02,banjara_hills,Banjara Hills,50,3.66,25,False,True
+2026-03,banjara_hills,Banjara Hills,44,4.1136,16,False,True
+2026-04,banjara_hills,Banjara Hills,52,3.3654,29,False,True
+2026-05,banjara_hills,Banjara Hills,45,3.8222,17,False,True
+2026-06,banjara_hills,Banjara Hills,51,3.1961,25,False,True
+2026-07,banjara_hills,Banjara Hills,37,3.9189,15,False,True
+2026-08,banjara_hills,Banjara Hills,19,4.4737,10,False,True
+2017-05,gachibowli,Gachibowli,0,,0,True,False
+2017-06,gachibowli,Gachibowli,0,,0,True,False
+2017-07,gachibowli,Gachibowli,0,,0,True,False
+2017-08,gachibowli,Gachibowli,0,,0,True,False
+2017-09,gachibowli,Gachibowli,0,,0,True,False
+2017-10,gachibowli,Gachibowli,0,,0,True,False
+2017-11,gachibowli,Gachibowli,0,,0,True,False
+2017-12,gachibowli,Gachibowli,0,,0,True,False
+2018-01,gachibowli,Gachibowli,0,,0,True,False
+2018-02,gachibowli,Gachibowli,0,,0,True,False
+2018-03,gachibowli,Gachibowli,0,,0,True,False
+2018-04,gachibowli,Gachibowli,0,,0,True,False
+2018-05,gachibowli,Gachibowli,0,,0,True,False
+2018-06,gachibowli,Gachibowli,0,,0,True,False
+2018-07,gachibowli,Gachibowli,0,,0,True,False
+2018-08,gachibowli,Gachibowli,0,,0,True,False
+2018-09,gachibowli,Gachibowli,0,,0,True,False
+2018-10,gachibowli,Gachibowli,0,,0,True,False
+2018-11,gachibowli,Gachibowli,0,,0,True,False
+2018-12,gachibowli,Gachibowli,0,,0,True,False
+2019-01,gachibowli,Gachibowli,0,,0,True,False
+2019-02,gachibowli,Gachibowli,0,,0,True,False
+2019-03,gachibowli,Gachibowli,0,,0,True,False
+2019-04,gachibowli,Gachibowli,0,,0,True,False
+2019-05,gachibowli,Gachibowli,0,,0,True,False
+2019-06,gachibowli,Gachibowli,0,,0,True,False
+2019-07,gachibowli,Gachibowli,0,,0,True,False
+2019-08,gachibowli,Gachibowli,0,,0,True,False
+2019-09,gachibowli,Gachibowli,0,,0,True,False
+2019-10,gachibowli,Gachibowli,0,,0,True,False
+2019-11,gachibowli,Gachibowli,0,,0,True,False
+2019-12,gachibowli,Gachibowli,0,,0,True,False
+2020-01,gachibowli,Gachibowli,0,,0,True,False
+2020-02,gachibowli,Gachibowli,0,,0,True,False
+2020-03,gachibowli,Gachibowli,0,,0,True,False
+2020-04,gachibowli,Gachibowli,0,,0,True,False
+2020-05,gachibowli,Gachibowli,0,,0,True,False
+2020-06,gachibowli,Gachibowli,0,,0,True,False
+2020-07,gachibowli,Gachibowli,0,,0,True,False
+2020-08,gachibowli,Gachibowli,0,,0,True,False
+2020-09,gachibowli,Gachibowli,0,,0,True,False
+2020-10,gachibowli,Gachibowli,0,,0,True,False
+2020-11,gachibowli,Gachibowli,0,,0,True,False
+2020-12,gachibowli,Gachibowli,0,,0,True,False
+2021-01,gachibowli,Gachibowli,0,,0,True,False
+2021-02,gachibowli,Gachibowli,0,,0,True,False
+2021-03,gachibowli,Gachibowli,0,,0,True,False
+2021-04,gachibowli,Gachibowli,0,,0,True,False
+2021-05,gachibowli,Gachibowli,0,,0,True,False
+2021-06,gachibowli,Gachibowli,0,,0,True,False
+2021-07,gachibowli,Gachibowli,0,,0,True,False
+2021-08,gachibowli,Gachibowli,0,,0,True,False
+2021-09,gachibowli,Gachibowli,0,,0,True,False
+2021-10,gachibowli,Gachibowli,0,,0,True,False
+2021-11,gachibowli,Gachibowli,0,,0,True,False
+2021-12,gachibowli,Gachibowli,0,,0,True,False
+2022-01,gachibowli,Gachibowli,0,,0,True,False
+2022-02,gachibowli,Gachibowli,0,,0,True,False
+2022-03,gachibowli,Gachibowli,0,,0,True,False
+2022-04,gachibowli,Gachibowli,0,,0,True,False
+2022-05,gachibowli,Gachibowli,0,,0,True,False
+2022-06,gachibowli,Gachibowli,0,,0,True,False
+2022-07,gachibowli,Gachibowli,0,,0,True,False
+2022-08,gachibowli,Gachibowli,0,,0,True,False
+2022-09,gachibowli,Gachibowli,0,,0,True,False
+2022-10,gachibowli,Gachibowli,0,,0,True,False
+2022-11,gachibowli,Gachibowli,0,,0,True,False
+2022-12,gachibowli,Gachibowli,0,,0,True,False
+2023-01,gachibowli,Gachibowli,0,,0,True,False
+2023-02,gachibowli,Gachibowli,0,,0,True,False
+2023-03,gachibowli,Gachibowli,0,,0,True,False
+2023-04,gachibowli,Gachibowli,0,,0,True,False
+2023-05,gachibowli,Gachibowli,3,4.6667,1,False,True
+2023-06,gachibowli,Gachibowli,28,3.6429,17,False,True
+2023-07,gachibowli,Gachibowli,28,3.8214,16,False,True
+2023-08,gachibowli,Gachibowli,106,4.1132,29,False,True
+2023-09,gachibowli,Gachibowli,108,4.037,43,False,True
+2023-10,gachibowli,Gachibowli,111,4.2523,42,False,True
+2023-11,gachibowli,Gachibowli,87,4.069,31,False,True
+2023-12,gachibowli,Gachibowli,81,4.321,30,False,True
+2024-01,gachibowli,Gachibowli,100,4.0,50,False,True
+2024-02,gachibowli,Gachibowli,86,3.9419,35,False,True
+2024-03,gachibowli,Gachibowli,65,4.0769,28,False,True
+2024-04,gachibowli,Gachibowli,63,3.746,30,False,True
+2024-05,gachibowli,Gachibowli,68,3.8971,29,False,True
+2024-06,gachibowli,Gachibowli,51,4.0,24,False,True
+2024-07,gachibowli,Gachibowli,66,4.0152,24,False,True
+2024-08,gachibowli,Gachibowli,54,3.8148,24,False,True
+2024-09,gachibowli,Gachibowli,46,3.8696,21,False,True
+2024-10,gachibowli,Gachibowli,56,4.0179,21,False,True
+2024-11,gachibowli,Gachibowli,36,4.1111,16,False,True
+2024-12,gachibowli,Gachibowli,36,3.7778,17,False,True
+2025-01,gachibowli,Gachibowli,38,3.8421,17,False,True
+2025-02,gachibowli,Gachibowli,29,4.2414,12,False,True
+2025-03,gachibowli,Gachibowli,32,3.8125,15,False,True
+2025-04,gachibowli,Gachibowli,34,3.8824,16,False,True
+2025-05,gachibowli,Gachibowli,27,4.0,12,False,True
+2025-06,gachibowli,Gachibowli,40,3.725,23,False,True
+2025-07,gachibowli,Gachibowli,40,3.55,17,False,True
+2025-08,gachibowli,Gachibowli,49,3.9796,17,False,True
+2025-09,gachibowli,Gachibowli,38,3.8158,21,False,True
+2025-10,gachibowli,Gachibowli,41,4.1707,14,False,True
+2025-11,gachibowli,Gachibowli,26,4.1923,15,False,True
+2025-12,gachibowli,Gachibowli,44,3.5682,20,False,True
+2026-01,gachibowli,Gachibowli,32,3.9062,10,False,True
+2026-02,gachibowli,Gachibowli,38,3.9737,15,False,True
+2026-03,gachibowli,Gachibowli,30,3.6,14,False,True
+2026-04,gachibowli,Gachibowli,41,3.9756,16,False,True
+2026-05,gachibowli,Gachibowli,45,4.0667,22,False,True
+2026-06,gachibowli,Gachibowli,48,3.4167,28,False,True
+2026-07,gachibowli,Gachibowli,40,3.8,18,False,True
+2026-08,gachibowli,Gachibowli,25,3.2,12,False,True
+2017-05,jubilee_hills,Jubilee Hills,2,5.0,1,False,True
+2017-06,jubilee_hills,Jubilee Hills,11,4.9091,6,False,True
+2017-07,jubilee_hills,Jubilee Hills,15,4.8,10,False,True
+2017-08,jubilee_hills,Jubilee Hills,13,4.4615,7,False,True
+2017-09,jubilee_hills,Jubilee Hills,30,4.3333,14,False,True
+2017-10,jubilee_hills,Jubilee Hills,38,4.1842,18,False,True
+2017-11,jubilee_hills,Jubilee Hills,59,4.3559,26,False,True
+2017-12,jubilee_hills,Jubilee Hills,113,4.1593,54,False,True
+2018-01,jubilee_hills,Jubilee Hills,140,4.4571,52,False,True
+2018-02,jubilee_hills,Jubilee Hills,136,4.3088,56,False,True
+2018-03,jubilee_hills,Jubilee Hills,182,4.2857,82,False,True
+2018-04,jubilee_hills,Jubilee Hills,140,4.1286,72,False,True
+2018-05,jubilee_hills,Jubilee Hills,146,4.226,63,False,True
+2018-06,jubilee_hills,Jubilee Hills,102,4.2353,37,False,True
+2018-07,jubilee_hills,Jubilee Hills,121,4.3306,50,False,True
+2018-08,jubilee_hills,Jubilee Hills,187,4.3209,71,False,True
+2018-09,jubilee_hills,Jubilee Hills,213,4.2911,78,False,True
+2018-10,jubilee_hills,Jubilee Hills,234,4.265,84,False,True
+2018-11,jubilee_hills,Jubilee Hills,211,4.3697,76,False,True
+2018-12,jubilee_hills,Jubilee Hills,316,4.2785,105,False,True
+2019-01,jubilee_hills,Jubilee Hills,402,4.1915,149,False,True
+2019-02,jubilee_hills,Jubilee Hills,325,4.2462,114,False,True
+2019-03,jubilee_hills,Jubilee Hills,425,4.3412,146,False,True
+2019-04,jubilee_hills,Jubilee Hills,406,4.2438,142,False,True
+2019-05,jubilee_hills,Jubilee Hills,420,4.2881,133,False,True
+2019-06,jubilee_hills,Jubilee Hills,434,4.2857,126,False,True
+2019-07,jubilee_hills,Jubilee Hills,425,4.3388,142,False,True
+2019-08,jubilee_hills,Jubilee Hills,616,4.2419,176,False,True
+2019-09,jubilee_hills,Jubilee Hills,710,4.3296,208,False,True
+2019-10,jubilee_hills,Jubilee Hills,672,4.2679,192,False,True
+2019-11,jubilee_hills,Jubilee Hills,820,4.2744,244,False,True
+2019-12,jubilee_hills,Jubilee Hills,897,4.2631,241,False,True
+2020-01,jubilee_hills,Jubilee Hills,936,4.2265,293,False,True
+2020-02,jubilee_hills,Jubilee Hills,966,4.2743,281,False,True
+2020-03,jubilee_hills,Jubilee Hills,497,4.3179,125,False,True
+2020-04,jubilee_hills,Jubilee Hills,25,4.0,10,False,True
+2020-05,jubilee_hills,Jubilee Hills,32,4.3438,12,False,True
+2020-06,jubilee_hills,Jubilee Hills,22,4.4091,4,False,True
+2020-07,jubilee_hills,Jubilee Hills,25,4.36,6,False,True
+2020-08,jubilee_hills,Jubilee Hills,98,4.3367,36,False,True
+2020-09,jubilee_hills,Jubilee Hills,198,4.2172,67,False,True
+2020-10,jubilee_hills,Jubilee Hills,275,4.1891,108,False,True
+2020-11,jubilee_hills,Jubilee Hills,378,4.2407,146,False,True
+2020-12,jubilee_hills,Jubilee Hills,531,4.1525,187,False,True
+2021-01,jubilee_hills,Jubilee Hills,617,4.2156,207,False,True
+2021-02,jubilee_hills,Jubilee Hills,535,4.1757,173,False,True
+2021-03,jubilee_hills,Jubilee Hills,521,4.1881,167,False,True
+2021-04,jubilee_hills,Jubilee Hills,265,4.1094,102,False,True
+2021-05,jubilee_hills,Jubilee Hills,32,4.25,9,False,True
+2021-06,jubilee_hills,Jubilee Hills,23,4.1739,12,False,True
+2021-07,jubilee_hills,Jubilee Hills,397,4.1083,134,False,True
+2021-08,jubilee_hills,Jubilee Hills,498,4.2711,197,False,True
+2021-09,jubilee_hills,Jubilee Hills,485,4.1526,203,False,True
+2021-10,jubilee_hills,Jubilee Hills,471,4.0064,187,False,True
+2021-11,jubilee_hills,Jubilee Hills,355,4.2225,117,False,True
+2021-12,jubilee_hills,Jubilee Hills,516,4.0969,193,False,True
+2022-01,jubilee_hills,Jubilee Hills,409,4.0024,129,False,True
+2022-02,jubilee_hills,Jubilee Hills,351,3.9373,128,False,True
+2022-03,jubilee_hills,Jubilee Hills,414,3.9227,166,False,True
+2022-04,jubilee_hills,Jubilee Hills,348,4.0345,119,False,True
+2022-05,jubilee_hills,Jubilee Hills,443,4.0903,145,False,True
+2022-06,jubilee_hills,Jubilee Hills,401,3.99,146,False,True
+2022-07,jubilee_hills,Jubilee Hills,419,3.9117,136,False,True
+2022-08,jubilee_hills,Jubilee Hills,374,4.0909,132,False,True
+2022-09,jubilee_hills,Jubilee Hills,364,3.9643,132,False,True
+2022-10,jubilee_hills,Jubilee Hills,394,3.9772,114,False,True
+2022-11,jubilee_hills,Jubilee Hills,381,3.9186,137,False,True
+2022-12,jubilee_hills,Jubilee Hills,412,4.0049,147,False,True
+2023-01,jubilee_hills,Jubilee Hills,397,3.9043,140,False,True
+2023-02,jubilee_hills,Jubilee Hills,266,4.0677,93,False,True
+2023-03,jubilee_hills,Jubilee Hills,272,3.9522,84,False,True
+2023-04,jubilee_hills,Jubilee Hills,275,4.0364,79,False,True
+2023-05,jubilee_hills,Jubilee Hills,269,3.9145,78,False,True
+2023-06,jubilee_hills,Jubilee Hills,273,3.9927,84,False,True
+2023-07,jubilee_hills,Jubilee Hills,289,3.9066,99,False,True
+2023-08,jubilee_hills,Jubilee Hills,259,3.9537,100,False,True
+2023-09,jubilee_hills,Jubilee Hills,221,3.914,76,False,True
+2023-10,jubilee_hills,Jubilee Hills,245,3.7959,83,False,True
+2023-11,jubilee_hills,Jubilee Hills,195,4.1385,56,False,True
+2023-12,jubilee_hills,Jubilee Hills,195,3.9897,54,False,True
+2024-01,jubilee_hills,Jubilee Hills,165,4.1879,53,False,True
+2024-02,jubilee_hills,Jubilee Hills,117,3.8889,41,False,True
+2024-03,jubilee_hills,Jubilee Hills,107,3.7009,32,False,True
+2024-04,jubilee_hills,Jubilee Hills,102,3.8039,25,False,True
+2024-05,jubilee_hills,Jubilee Hills,153,3.7647,51,False,True
+2024-06,jubilee_hills,Jubilee Hills,126,3.746,57,False,True
+2024-07,jubilee_hills,Jubilee Hills,122,3.623,47,False,True
+2024-08,jubilee_hills,Jubilee Hills,105,3.6,35,False,True
+2024-09,jubilee_hills,Jubilee Hills,87,3.977,24,False,True
+2024-10,jubilee_hills,Jubilee Hills,111,3.8378,31,False,True
+2024-11,jubilee_hills,Jubilee Hills,91,4.1429,34,False,True
+2024-12,jubilee_hills,Jubilee Hills,110,3.9273,36,False,True
+2025-01,jubilee_hills,Jubilee Hills,65,3.9385,20,False,True
+2025-02,jubilee_hills,Jubilee Hills,53,4.2264,16,False,True
+2025-03,jubilee_hills,Jubilee Hills,74,4.1216,17,False,True
+2025-04,jubilee_hills,Jubilee Hills,60,4.2,19,False,True
+2025-05,jubilee_hills,Jubilee Hills,59,3.8136,23,False,True
+2025-06,jubilee_hills,Jubilee Hills,77,3.6494,31,False,True
+2025-07,jubilee_hills,Jubilee Hills,76,3.8421,31,False,True
+2025-08,jubilee_hills,Jubilee Hills,86,3.8488,29,False,True
+2025-09,jubilee_hills,Jubilee Hills,77,4.1299,24,False,True
+2025-10,jubilee_hills,Jubilee Hills,74,3.8784,27,False,True
+2025-11,jubilee_hills,Jubilee Hills,72,3.5417,23,False,True
+2025-12,jubilee_hills,Jubilee Hills,87,3.6092,34,False,True
+2026-01,jubilee_hills,Jubilee Hills,70,3.9286,29,False,True
+2026-02,jubilee_hills,Jubilee Hills,64,3.6875,27,False,True
+2026-03,jubilee_hills,Jubilee Hills,56,3.7143,17,False,True
+2026-04,jubilee_hills,Jubilee Hills,62,3.5161,30,False,True
+2026-05,jubilee_hills,Jubilee Hills,59,3.7119,31,False,True
+2026-06,jubilee_hills,Jubilee Hills,75,3.9467,27,False,True
+2026-07,jubilee_hills,Jubilee Hills,65,3.5538,28,False,True
+2026-08,jubilee_hills,Jubilee Hills,27,4.1481,6,False,True

@@ -1,0 +1,1544 @@
+{
+  "dataset_name": "Mandi raw Google Maps review exports",
+  "source_files": [
+    "BanjaraHillsBranch.json",
+    "GachibowliBranch.json",
+    "JubileeHillsBranch.json"
+  ],
+  "raw_file_count": 3,
+  "top_level": {
+    "type": "list",
+    "item_type": "dict",
+    "total_record_count": 33275,
+    "records_by_file": {
+      "BanjaraHillsBranch.json": 3000,
+      "GachibowliBranch.json": 2016,
+      "JubileeHillsBranch.json": 28259
+    }
+  },
+  "all_fields": [
+    "address",
+    "author",
+    "businessProfileId",
+    "categories",
+    "categoryName",
+    "cid",
+    "city",
+    "countryCode",
+    "details",
+    "engagement",
+    "fid",
+    "hotelStars",
+    "imageUrl",
+    "isAdvertisement",
+    "isLocalGuide",
+    "kgmid",
+    "language",
+    "lastEditedAt",
+    "likesCount",
+    "location",
+    "meta",
+    "name",
+    "neighborhood",
+    "originalLanguage",
+    "originalLanguageName",
+    "ownerResponse",
+    "permanentlyClosed",
+    "photos",
+    "place",
+    "placeId",
+    "postalCode",
+    "price",
+    "publishAt",
+    "publishedAt",
+    "publishedAtDate",
+    "rating",
+    "relativeDate",
+    "responseFromOwnerDate",
+    "responseFromOwnerText",
+    "reviewContext",
+    "reviewDetailedRating",
+    "reviewId",
+    "reviewImageUrls",
+    "reviewOrigin",
+    "reviewUrl",
+    "reviewerId",
+    "reviewerNumberOfReviews",
+    "reviewerPhotoUrl",
+    "reviewerUrl",
+    "reviewsCount",
+    "scrapedAt",
+    "searchString",
+    "stars",
+    "state",
+    "street",
+    "temporarilyClosed",
+    "text",
+    "textTranslated",
+    "title",
+    "totalScore",
+    "translatedLanguage",
+    "translatedLanguageName",
+    "url",
+    "visitedIn",
+    "visitedMonth",
+    "visitedYear"
+  ],
+  "field_summary": [
+    {
+      "field": "address",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "author",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "businessProfileId",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "categories",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "list": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "categoryName",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "cid",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "city",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "countryCode",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "details",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "engagement",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "fid",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "hotelStars",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 15.07,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "imageUrl",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "isAdvertisement",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "bool": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "isLocalGuide",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "bool": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "kgmid",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "language",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 55.97,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 18623,
+        "str": 14652
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "lastEditedAt",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 70.64,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 23506,
+        "str": 4753
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "likesCount",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "int": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "location",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "meta",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "name",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "neighborhood",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "originalLanguage",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 92.82,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 30885,
+        "str": 2390
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "originalLanguageName",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 84.44,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 28096,
+        "str": 163
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "ownerResponse",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 84.93,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "permanentlyClosed",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "bool": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "photos",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "list": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "place",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "placeId",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "postalCode",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "price",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "publishAt",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "publishedAt",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "publishedAtDate",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "rating",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 15.07,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "int": 28259,
+        "NoneType": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "relativeDate",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "responseFromOwnerDate",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 15.06,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 5012,
+        "str": 4
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "responseFromOwnerText",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 15.06,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 5012,
+        "str": 4
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewContext",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewDetailedRating",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "dict": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewId",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 33275
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "reviewImageUrls",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "list": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewOrigin",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 33275
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "reviewUrl",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewerId",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewerNumberOfReviews",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "int": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewerPhotoUrl",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewerUrl",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "reviewsCount",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "int": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "scrapedAt",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "searchString",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "stars",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "int": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "state",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "street",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "temporarilyClosed",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "bool": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "text",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 64.64,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 21510,
+        "str": 11765
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "textTranslated",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 99.41,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 33080,
+        "str": 195
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "title",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "totalScore",
+      "present_records": 5016,
+      "missing_records": 28259,
+      "missing_rate_percent": 84.93,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "float": 5016
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json"
+      ]
+    },
+    {
+      "field": "translatedLanguage",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 99.41,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 33078,
+        "str": 197
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "translatedLanguageName",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 84.44,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 28096,
+        "str": 163
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "url",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 0.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "str": 33275
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "visitedIn",
+      "present_records": 33275,
+      "missing_records": 0,
+      "missing_rate_percent": 0.0,
+      "null_rate_percent": 100.0,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 33275
+      },
+      "source_files": [
+        "BanjaraHillsBranch.json",
+        "GachibowliBranch.json",
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "visitedMonth",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 84.93,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    },
+    {
+      "field": "visitedYear",
+      "present_records": 28259,
+      "missing_records": 5016,
+      "missing_rate_percent": 15.07,
+      "null_rate_percent": 84.93,
+      "empty_string_rate_percent": 0.0,
+      "observed_types": {
+        "NoneType": 28259
+      },
+      "source_files": [
+        "JubileeHillsBranch.json"
+      ]
+    }
+  ],
+  "duplicate_candidates": [
+    {
+      "field": "reviewId",
+      "repeated_values": [],
+      "duplicate_count": 0
+    },
+    {
+      "field": "reviewUrl",
+      "repeated_values": [],
+      "duplicate_count": 0
+    },
+    {
+      "field": "url",
+      "repeated_values": [
+        [
+          "https://www.google.com/maps/search/?api=1&query=Mandi%20%40%2036%20Arabian%20Kitchen&query_place_id=ChIJOSpiGFiXyzsREQXAgo-lwMI",
+          3000
+        ],
+        [
+          "https://www.google.com/maps/search/?api=1&query=Mandi%20%40%2036%20Arabian%20Kitchen&query_place_id=ChIJzTvmzbeTyzsR69-YcWo1sGY",
+          2016
+        ]
+      ],
+      "duplicate_count": 2
+    },
+    {
+      "field": "reviewerId",
+      "repeated_values": [
+        [
+          "106162474567795635533",
+          2
+        ],
+        [
+          "113987760515488377947",
+          2
+        ],
+        [
+          "106389824133369400456",
+          2
+        ],
+        [
+          "111937809069941225971",
+          2
+        ],
+        [
+          "116121856393949007830",
+          2
+        ],
+        [
+          "110210561408581534322",
+          2
+        ],
+        [
+          "107901867969206475612",
+          2
+        ],
+        [
+          "103785496362429132158",
+          2
+        ],
+        [
+          "109307440359733798003",
+          2
+        ],
+        [
+          "109068527512091581996",
+          2
+        ]
+      ],
+      "duplicate_count": 64
+    },
+    {
+      "field": "name",
+      "repeated_values": [
+        [
+          "John Marcus",
+          2
+        ],
+        [
+          "S K",
+          2
+        ],
+        [
+          "Shobiya Shoaib",
+          2
+        ],
+        [
+          "Fayez Mohammed",
+          2
+        ],
+        [
+          "Nabil Yasir",
+          2
+        ],
+        [
+          "Syed Shafi",
+          2
+        ],
+        [
+          "Ali Ahmed",
+          2
+        ],
+        [
+          "Khaleel Ahmed",
+          2
+        ],
+        [
+          "Mohammed Rehan",
+          2
+        ],
+        [
+          "Mohammed Mohsin",
+          2
+        ]
+      ],
+      "duplicate_count": 141
+    },
+    {
+      "field": "rating",
+      "repeated_values": [
+        [
+          "4",
+          8579
+        ],
+        [
+          "5",
+          13976
+        ],
+        [
+          "3",
+          2924
+        ],
+        [
+          "1",
+          1867
+        ],
+        [
+          "2",
+          913
+        ]
+      ],
+      "duplicate_count": 5
+    },
+    {
+      "field": "stars",
+      "repeated_values": [
+        [
+          "5",
+          2481
+        ],
+        [
+          "2",
+          180
+        ],
+        [
+          "3",
+          445
+        ],
+        [
+          "4",
+          1309
+        ],
+        [
+          "1",
+          601
+        ]
+      ],
+      "duplicate_count": 5
+    },
+    {
+      "field": "publishedAt",
+      "repeated_values": [],
+      "duplicate_count": 0
+    },
+    {
+      "field": "publishAt",
+      "repeated_values": [
+        [
+          "a day ago",
+          3
+        ],
+        [
+          "2 days ago",
+          3
+        ],
+        [
+          "4 days ago",
+          3
+        ],
+        [
+          "6 days ago",
+          5
+        ],
+        [
+          "a week ago",
+          22
+        ],
+        [
+          "2 weeks ago",
+          17
+        ],
+        [
+          "3 weeks ago",
+          18
+        ],
+        [
+          "Edited 3 weeks ago",
+          2
+        ],
+        [
+          "4 weeks ago",
+          5
+        ],
+        [
+          "a month ago",
+          87
+        ]
+      ],
+      "duplicate_count": 38
+    },
+    {
+      "field": "responseFromOwnerDate",
+      "repeated_values": [],
+      "duplicate_count": 0
+    },
+    {
+      "field": "responseFromOwnerText",
+      "repeated_values": [],
+      "duplicate_count": 0
+    },
+    {
+      "field": "text",
+      "repeated_values": [
+        [
+          "Excellent",
+          36
+        ],
+        [
+          "Very good",
+          11
+        ],
+        [
+          "Great food",
+          7
+        ],
+        [
+          "Good...",
+          2
+        ],
+        [
+          "Good",
+          205
+        ],
+        [
+          "Not good",
+          14
+        ],
+        [
+          "Too good",
+          6
+        ],
+        [
+          "Worst experience",
+          9
+        ],
+        [
+          "Amazing",
+          12
+        ],
+        [
+          "Best Mandi in Hyderabad",
+          12
+        ]
+      ],
+      "duplicate_count": 243
+    },
+    {
+      "field": "placeId",
+      "repeated_values": [
+        [
+          "ChIJOSpiGFiXyzsREQXAgo-lwMI",
+          3000
+        ],
+        [
+          "ChIJzTvmzbeTyzsR69-YcWo1sGY",
+          2016
+        ]
+      ],
+      "duplicate_count": 2
+    }
+  ],
+  "date_fields": [
+    "publishedAt",
+    "publishAt",
+    "lastEditedAt",
+    "responseFromOwnerDate",
+    "visitedIn",
+    "visitedYear",
+    "visitedMonth"
+  ],
+  "rating_fields": [
+    "rating",
+    "stars",
+    "reviewDetailedRating"
+  ],
+  "review_text_fields": [
+    "text",
+    "textTranslated"
+  ],
+  "branch_or_place_fields": [
+    "place",
+    "placeId",
+    "address",
+    "searchString",
+    "name"
+  ],
+  "owner_response_fields": [
+    "responseFromOwnerDate",
+    "responseFromOwnerText",
+    "ownerResponse"
+  ],
+  "reviewer_identifying_fields": [
+    "reviewerId",
+    "reviewerUrl",
+    "reviewerPhotoUrl",
+    "name",
+    "author"
+  ],
+  "fields_to_drop_for_analytics": [
+    "searchString",
+    "reviewerUrl",
+    "reviewerPhotoUrl",
+    "reviewImageUrls",
+    "photos",
+    "reviewOrigin",
+    "publishAt",
+    "relativeDate",
+    "reviewContext",
+    "engagement",
+    "meta"
+  ],
+  "recommended_normalized_schema": [
+    {
+      "name": "review_id",
+      "source": [
+        "reviewId",
+        "url"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "brand_id",
+      "source": [
+        "constant"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "branch_id",
+      "source": [
+        "file_name",
+        "place.placeId"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "branch_name",
+      "source": [
+        "file_name",
+        "place.name"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "source",
+      "source": [
+        "constant"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "review_date",
+      "source": [
+        "publishedAt",
+        "publishAt"
+      ],
+      "type": "datetime"
+    },
+    {
+      "name": "rating",
+      "source": [
+        "rating",
+        "stars"
+      ],
+      "type": "number"
+    },
+    {
+      "name": "review_text",
+      "source": [
+        "text"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "owner_response_text",
+      "source": [
+        "responseFromOwnerText",
+        "ownerResponse"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "owner_response_date",
+      "source": [
+        "responseFromOwnerDate"
+      ],
+      "type": "datetime"
+    },
+    {
+      "name": "review_url",
+      "source": [
+        "reviewUrl",
+        "url"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "language",
+      "source": [
+        "language",
+        "originalLanguage",
+        "translatedLanguage"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "raw_source_file",
+      "source": [
+        "file_name"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "reviewer_id",
+      "source": [
+        "reviewerId"
+      ],
+      "type": "string"
+    },
+    {
+      "name": "reviewer_name",
+      "source": [
+        "name",
+        "author.name"
+      ],
+      "type": "string"
+    }
+  ]
+}

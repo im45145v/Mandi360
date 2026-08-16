@@ -1,0 +1,232 @@
+{
+  "method": "tfidf_nmf_v1",
+  "status": "derived_ml_unvalidated",
+  "params": {
+    "num_topics_requested": 8,
+    "num_topics_fitted": 8,
+    "min_df": 5,
+    "max_df": 0.9,
+    "random_state": 42,
+    "documents_used": 11765,
+    "vocabulary_size": 4098
+  },
+  "reconstruction_error": 100.109376,
+  "topics": [
+    {
+      "topic_id": 0,
+      "top_terms": [
+        "good",
+        "good food",
+        "food good",
+        "good place",
+        "mandi good",
+        "good taste",
+        "taste good",
+        "good mandi",
+        "good service",
+        "good ambience"
+      ],
+      "top_term_weights": [
+        5.099,
+        0.288615,
+        0.216515,
+        0.14916,
+        0.145562,
+        0.124151,
+        0.107918,
+        0.107156,
+        0.105744,
+        0.088834
+      ]
+    },
+    {
+      "topic_id": 1,
+      "top_terms": [
+        "best",
+        "best mandi",
+        "mandi",
+        "hyderabad",
+        "mandi hyderabad",
+        "best place",
+        "town",
+        "mandi town",
+        "mandi best",
+        "mandi place"
+      ],
+      "top_term_weights": [
+        2.88182,
+        2.461023,
+        1.427565,
+        1.266255,
+        1.20164,
+        0.271941,
+        0.261383,
+        0.234365,
+        0.132634,
+        0.120637
+      ]
+    },
+    {
+      "topic_id": 2,
+      "top_terms": [
+        "food",
+        "good food",
+        "tasty",
+        "food good",
+        "tasty food",
+        "delicious",
+        "delicious food",
+        "service",
+        "great",
+        "ambience"
+      ],
+      "top_term_weights": [
+        3.488982,
+        1.731848,
+        0.808049,
+        0.655412,
+        0.608214,
+        0.590859,
+        0.48686,
+        0.429835,
+        0.314895,
+        0.301689
+      ]
+    },
+    {
+      "topic_id": 3,
+      "top_terms": [
+        "nice",
+        "nice food",
+        "nice place",
+        "nice taste",
+        "food nice",
+        "nice mandi",
+        "nice ambience",
+        "ambience",
+        "food",
+        "mandi nice"
+      ],
+      "top_term_weights": [
+        3.400725,
+        0.588948,
+        0.465095,
+        0.184153,
+        0.135893,
+        0.118587,
+        0.110231,
+        0.07897,
+        0.065958,
+        0.059346
+      ]
+    },
+    {
+      "topic_id": 4,
+      "top_terms": [
+        "mandi",
+        "mutton",
+        "chicken",
+        "mutton mandi",
+        "juicy",
+        "try",
+        "juicy mandi",
+        "mutton juicy",
+        "delicious",
+        "mandi good"
+      ],
+      "top_term_weights": [
+        2.556742,
+        1.694828,
+        0.937463,
+        0.868066,
+        0.858996,
+        0.840391,
+        0.510898,
+        0.510518,
+        0.414904,
+        0.402663
+      ]
+    },
+    {
+      "topic_id": 5,
+      "top_terms": [
+        "awesome",
+        "awesome food",
+        "awesome mandi",
+        "awesome taste",
+        "awesome place",
+        "food awesome",
+        "mandi awesome",
+        "food",
+        "taste awesome",
+        "just awesome"
+      ],
+      "top_term_weights": [
+        3.272214,
+        0.642715,
+        0.312686,
+        0.249829,
+        0.190708,
+        0.18453,
+        0.170928,
+        0.102045,
+        0.095469,
+        0.060157
+      ]
+    },
+    {
+      "topic_id": 6,
+      "top_terms": [
+        "taste",
+        "good taste",
+        "taste good",
+        "great",
+        "great taste",
+        "worst",
+        "food taste",
+        "nice taste",
+        "service",
+        "quantity"
+      ],
+      "top_term_weights": [
+        2.984212,
+        1.337956,
+        0.706263,
+        0.325976,
+        0.290982,
+        0.219882,
+        0.180024,
+        0.173546,
+        0.168387,
+        0.166178
+      ]
+    },
+    {
+      "topic_id": 7,
+      "top_terms": [
+        "place",
+        "good place",
+        "place mandi",
+        "best place",
+        "great",
+        "nice place",
+        "eat",
+        "visit",
+        "place eat",
+        "great place"
+      ],
+      "top_term_weights": [
+        2.39791,
+        1.275832,
+        0.850348,
+        0.667724,
+        0.472313,
+        0.448295,
+        0.284704,
+        0.278949,
+        0.276779,
+        0.267999
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "manifest_version": 1,
+  "created_at_utc": "2026-08-16T12:01:20.879080+00:00",
+  "data_status": "real_input_with_derived_normalization",
+  "source_files": [
+    {
+      "path": "/workspaces/Mandi360/data/raw/BanjaraHillsBranch.json",
+      "file_name": "BanjaraHillsBranch.json",
+      "branch_id": "banjara_hills",
+      "branch_name": "Banjara Hills",
+      "brand_id": "one_mandi",
+      "size_bytes": 9369731,
+      "sha256": "bfcfec9658e54d866edbd920da1c7733fb394347145be89036749c2f375ef9d0"
+    },
+    {
+      "path": "/workspaces/Mandi360/data/raw/GachibowliBranch.json",
+      "file_name": "GachibowliBranch.json",
+      "branch_id": "gachibowli",
+      "branch_name": "Gachibowli",
+      "brand_id": "one_mandi",
+      "size_bytes": 6483506,
+      "sha256": "d8a712419efd6167e5a6bc12d5ca39944bd4aaf9d32efd1f146547bffca61488"
+    },
+    {
+      "path": "/workspaces/Mandi360/data/raw/JubileeHillsBranch.json",
+      "file_name": "JubileeHillsBranch.json",
+      "branch_id": "jubilee_hills",
+      "branch_name": "Jubilee Hills",
+      "brand_id": "one_mandi",
+      "size_bytes": 59429290,
+      "sha256": "b08eca2e7c9a2091fff9c02567694a76f02abc708d32cf6e3e2d0a6593c2843b"
+    }
+  ],
+  "normalized_output": {
+    "path": "/workspaces/Mandi360/data/interim/reviews_normalized.csv",
+    "record_count": 33275
+  },
+  "records_by_branch": {
+    "banjara_hills": 3000,
+    "gachibowli": 2016,
+    "jubilee_hills": 28259
+  },
+  "records_by_source_file": {
+    "BanjaraHillsBranch.json": 3000,
+    "GachibowliBranch.json": 2016,
+    "JubileeHillsBranch.json": 28259
+  }
+}

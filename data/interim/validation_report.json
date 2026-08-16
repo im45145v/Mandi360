@@ -1,0 +1,21 @@
+{
+  "total_records": 33275,
+  "missing_review_text": 21510,
+  "missing_rating": 0,
+  "missing_review_date": 0,
+  "invalid_rating": 0,
+  "duplicate_review_id_count": 0,
+  "duplicate_review_id_samples": [],
+  "generated_review_ids": 0,
+  "records_by_branch": {
+    "banjara_hills": 3000,
+    "gachibowli": 2016,
+    "jubilee_hills": 28259
+  },
+  "date_range_start": "2017-05-20T01:01:25.714000+00:00",
+  "date_range_end": "2026-08-15T17:49:30.917000+00:00",
+  "warnings": [
+    "21510 records have missing review text."
+  ],
+  "errors": []
+}

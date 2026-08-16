@@ -1,0 +1,1180 @@
+{
+  "method": "apriori_v1",
+  "status": "derived_unvalidated",
+  "params": {
+    "transaction_count": 33275,
+    "min_support": 0.01,
+    "min_confidence": 0.3,
+    "max_len": 3
+  },
+  "frequent_itemset_count": 71,
+  "rule_count": 100,
+  "rules": [
+    {
+      "antecedent": [
+        "sentiment:Negative"
+      ],
+      "consequent": [
+        "rating_low"
+      ],
+      "support": 0.018392,
+      "confidence": 0.888244,
+      "lift": 8.300004
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "aspect:service"
+      ],
+      "support": 0.01124,
+      "confidence": 0.346296,
+      "lift": 6.838581
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "sentiment:Neutral"
+      ],
+      "support": 0.013944,
+      "confidence": 0.42963,
+      "lift": 6.670987
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "aspect:ambience",
+        "aspect:food_quality"
+      ],
+      "support": 0.015718,
+      "confidence": 0.310386,
+      "lift": 5.656126
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "sentiment:Neutral"
+      ],
+      "support": 0.012382,
+      "confidence": 0.362996,
+      "lift": 5.636341
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "rating_high"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.014335,
+      "confidence": 0.505832,
+      "lift": 5.486172
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "sentiment:Neutral"
+      ],
+      "support": 0.01719,
+      "confidence": 0.339466,
+      "lift": 5.270988
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time",
+        "rating_high"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.010248,
+      "confidence": 0.47427,
+      "lift": 5.143849
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.010849,
+      "confidence": 0.456962,
+      "lift": 4.956131
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:service"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.015718,
+      "confidence": 0.452422,
+      "lift": 4.906893
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.013884,
+      "confidence": 0.427778,
+      "lift": 4.639604
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "aspect:service"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.015718,
+      "confidence": 0.780597,
+      "lift": 4.437029
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.020135,
+      "confidence": 0.397626,
+      "lift": 4.312584
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "aspect:ambience",
+        "rating_high"
+      ],
+      "support": 0.010248,
+      "confidence": 0.315741,
+      "lift": 4.281285
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "rating_high"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.021337,
+      "confidence": 0.752916,
+      "lift": 4.279687
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.014425,
+      "confidence": 0.745342,
+      "lift": 4.236632
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.01719,
+      "confidence": 0.724051,
+      "lift": 4.115611
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.024132,
+      "confidence": 0.374708,
+      "lift": 4.064022
+    },
+    {
+      "antecedent": [
+        "aspect:quantity"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.015567,
+      "confidence": 0.695302,
+      "lift": 3.952199
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.034741,
+      "confidence": 0.686053,
+      "lift": 3.899629
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time",
+        "rating_high"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.014696,
+      "confidence": 0.680111,
+      "lift": 3.865853
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.012051,
+      "confidence": 0.353304,
+      "lift": 3.831874
+    },
+    {
+      "antecedent": [
+        "aspect:price_value",
+        "rating_high"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.014726,
+      "confidence": 0.674003,
+      "lift": 3.831131
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.013944,
+      "confidence": 0.66571,
+      "lift": 3.783995
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.02263,
+      "confidence": 0.663436,
+      "lift": 3.771069
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.021488,
+      "confidence": 0.662037,
+      "lift": 3.763116
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.093614,
+      "confidence": 0.726954,
+      "lift": 3.724886
+    },
+    {
+      "antecedent": [
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "rating_high"
+      ],
+      "support": 0.093614,
+      "confidence": 0.479674,
+      "lift": 3.724886
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.024132,
+      "confidence": 0.645498,
+      "lift": 3.669108
+    },
+    {
+      "antecedent": [
+        "aspect:price_value",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.012382,
+      "confidence": 0.63876,
+      "lift": 3.630804
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "rating_high"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.042615,
+      "confidence": 0.330922,
+      "lift": 3.589121
+    },
+    {
+      "antecedent": [
+        "aspect:ambience"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "rating_high"
+      ],
+      "support": 0.042615,
+      "confidence": 0.46219,
+      "lift": 3.589121
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "rating_high"
+      ],
+      "support": 0.014696,
+      "confidence": 0.452778,
+      "lift": 3.516028
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.049677,
+      "confidence": 0.673594,
+      "lift": 3.45147
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "aspect:ambience"
+      ],
+      "support": 0.054876,
+      "confidence": 0.311923,
+      "lift": 3.383068
+    },
+    {
+      "antecedent": [
+        "aspect:ambience"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.054876,
+      "confidence": 0.595176,
+      "lift": 3.383068
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "rating_high"
+      ],
+      "support": 0.014726,
+      "confidence": 0.431718,
+      "lift": 3.35249
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "rating_high"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.042615,
+      "confidence": 0.577832,
+      "lift": 3.284483
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "rating_high"
+      ],
+      "support": 0.021337,
+      "confidence": 0.421365,
+      "lift": 3.272093
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.030143,
+      "confidence": 0.564752,
+      "lift": 3.210135
+    },
+    {
+      "antecedent": [
+        "aspect:ambience"
+      ],
+      "consequent": [
+        "aspect:food_quality",
+        "sentiment:Positive"
+      ],
+      "support": 0.030143,
+      "confidence": 0.326923,
+      "lift": 3.178021
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "rating_low"
+      ],
+      "support": 0.01716,
+      "confidence": 0.338872,
+      "lift": 3.16652
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.01701,
+      "confidence": 0.600212,
+      "lift": 3.075463
+    },
+    {
+      "antecedent": [
+        "aspect:ambience"
+      ],
+      "consequent": [
+        "rating_high",
+        "sentiment:Positive"
+      ],
+      "support": 0.049677,
+      "confidence": 0.538787,
+      "lift": 3.034555
+    },
+    {
+      "antecedent": [
+        "rating_high",
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.093614,
+      "confidence": 0.527251,
+      "lift": 2.996974
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "rating_high",
+        "sentiment:Positive"
+      ],
+      "support": 0.093614,
+      "confidence": 0.532115,
+      "lift": 2.996974
+    },
+    {
+      "antecedent": [
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "aspect:food_quality"
+      ],
+      "support": 0.10287,
+      "confidence": 0.527102,
+      "lift": 2.996125
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.10287,
+      "confidence": 0.584728,
+      "lift": 2.996125
+    },
+    {
+      "antecedent": [
+        "aspect:ambience"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.053373,
+      "confidence": 0.578879,
+      "lift": 2.966152
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.030143,
+      "confidence": 0.549288,
+      "lift": 2.81453
+    },
+    {
+      "antecedent": [
+        "aspect:price_value",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.01151,
+      "confidence": 0.526823,
+      "lift": 2.699418
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:service"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.014425,
+      "confidence": 0.415225,
+      "lift": 2.127596
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.013434,
+      "confidence": 0.393833,
+      "lift": 2.017983
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "sentiment:Positive"
+      ],
+      "support": 0.019354,
+      "confidence": 0.382196,
+      "lift": 1.958356
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "rating_high",
+        "sentiment:Positive"
+      ],
+      "support": 0.01151,
+      "confidence": 0.337445,
+      "lift": 1.900555
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "rating_high",
+        "sentiment:Positive"
+      ],
+      "support": 0.01701,
+      "confidence": 0.335905,
+      "lift": 1.891882
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.049677,
+      "confidence": 0.930743,
+      "lift": 1.175573
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.093614,
+      "confidence": 0.91002,
+      "lift": 1.1494
+    },
+    {
+      "antecedent": [
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.177551,
+      "confidence": 0.909763,
+      "lift": 1.149074
+    },
+    {
+      "antecedent": [
+        "rating_mid"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.088505,
+      "confidence": 0.874147,
+      "lift": 1.114795
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.01701,
+      "confidence": 0.878882,
+      "lift": 1.11007
+    },
+    {
+      "antecedent": [
+        "aspect:price_value",
+        "sentiment:Positive"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.01151,
+      "confidence": 0.856823,
+      "lift": 1.082209
+    },
+    {
+      "antecedent": [
+        "aspect:ambience"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.073749,
+      "confidence": 0.79987,
+      "lift": 1.010274
+    },
+    {
+      "antecedent": [
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.613073,
+      "confidence": 0.781849,
+      "lift": 0.987513
+    },
+    {
+      "antecedent": [
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.613073,
+      "confidence": 0.77434,
+      "lift": 0.987513
+    },
+    {
+      "antecedent": [
+        "rating_low"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.082554,
+      "confidence": 0.771413,
+      "lift": 0.983779
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.042615,
+      "confidence": 0.776561,
+      "lift": 0.980834
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.010248,
+      "confidence": 0.738095,
+      "lift": 0.93225
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.128775,
+      "confidence": 0.731978,
+      "lift": 0.924524
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "aspect:service"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.014335,
+      "confidence": 0.71194,
+      "lift": 0.899215
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.014696,
+      "confidence": 0.683916,
+      "lift": 0.863819
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.021608,
+      "confidence": 0.665741,
+      "lift": 0.840863
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.013944,
+      "confidence": 0.648951,
+      "lift": 0.827604
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.020947,
+      "confidence": 0.64537,
+      "lift": 0.823038
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.014726,
+      "confidence": 0.65073,
+      "lift": 0.821904
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.024012,
+      "confidence": 0.642283,
+      "lift": 0.811234
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.021848,
+      "confidence": 0.640529,
+      "lift": 0.809018
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "rating_low"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.019174,
+      "confidence": 0.627335,
+      "lift": 0.800038
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "rating_mid"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.010398,
+      "confidence": 0.626812,
+      "lift": 0.79937
+    },
+    {
+      "antecedent": [
+        "aspect:quantity"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.013854,
+      "confidence": 0.618792,
+      "lift": 0.781564
+    },
+    {
+      "antecedent": [
+        "aspect:quantity"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.013644,
+      "confidence": 0.609396,
+      "lift": 0.77716
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:service"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.021337,
+      "confidence": 0.614187,
+      "lift": 0.775747
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.012772,
+      "confidence": 0.609756,
+      "lift": 0.770151
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.012772,
+      "confidence": 0.591099,
+      "lift": 0.753825
+    },
+    {
+      "antecedent": [
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.019384,
+      "confidence": 0.568282,
+      "lift": 0.724727
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.02834,
+      "confidence": 0.559644,
+      "lift": 0.706857
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:price_value"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.012382,
+      "confidence": 0.547145,
+      "lift": 0.697771
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "aspect:service"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.010849,
+      "confidence": 0.538806,
+      "lift": 0.687137
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.034831,
+      "confidence": 0.540831,
+      "lift": 0.683095
+    },
+    {
+      "antecedent": [
+        "aspect:price_value",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.010218,
+      "confidence": 0.527132,
+      "lift": 0.665793
+    },
+    {
+      "antecedent": [
+        "aspect:waiting_time"
+      ],
+      "consequent": [
+        "rating_high",
+        "sentiment:Neutral"
+      ],
+      "support": 0.012772,
+      "confidence": 0.393519,
+      "lift": 0.641879
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality",
+        "aspect:service"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.01719,
+      "confidence": 0.49481,
+      "lift": 0.631028
+    },
+    {
+      "antecedent": [
+        "aspect:service"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.023742,
+      "confidence": 0.468843,
+      "lift": 0.597913
+    },
+    {
+      "antecedent": [
+        "aspect:price_value",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.010218,
+      "confidence": 0.467675,
+      "lift": 0.596424
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "sentiment:Neutral"
+      ],
+      "consequent": [
+        "rating_high"
+      ],
+      "support": 0.010909,
+      "confidence": 0.459494,
+      "lift": 0.580363
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.024132,
+      "confidence": 0.439759,
+      "lift": 0.560823
+    },
+    {
+      "antecedent": [
+        "aspect:ambience"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.037385,
+      "confidence": 0.405476,
+      "lift": 0.517101
+    },
+    {
+      "antecedent": [
+        "aspect:service",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.010909,
+      "confidence": 0.384942,
+      "lift": 0.490914
+    },
+    {
+      "antecedent": [
+        "aspect:food_quality"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.064403,
+      "confidence": 0.366074,
+      "lift": 0.466853
+    },
+    {
+      "antecedent": [
+        "aspect:ambience",
+        "rating_high"
+      ],
+      "consequent": [
+        "sentiment:Neutral"
+      ],
+      "support": 0.024012,
+      "confidence": 0.325591,
+      "lift": 0.415224
+    }
+  ]
+}

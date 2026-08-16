@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Mandi @ 36 Arabian Kitchen</title>
+  <desc id="desc">Mandi @ 36 Arabian Kitchen brand mark</desc>
+  <rect width="600" height="600" fill="#b40000"/>
+  <g fill="#ffd51a">
+    <path d="M145 286h310l-40-28-47-46-38 36-38-36-47 46z"/>
+    <path d="M175 285h86l-5 112h-82zM339 285h86l5 112h-82z"/>
+    <path d="M134 401h332l-42 13H176z"/>
+    <ellipse cx="298" cy="153" rx="25" ry="52" transform="rotate(14 298 153)"/>
+    <path d="M252 158l-30-58 9-4 30 58zm-14 7l-30-58 9-4 30 58zm-14 7l-30-58 9-4 30 58z"/>
+    <path d="M229 108l30 66-15 7-30-66z"/>
+    <path d="M296 198c-29-20-52-36-72-58l-12 24c24 23 48 40 84 59zM299 198c29-20 52-36 72-58l12 24c-24 23-48 40-84 59z"/>
+    <circle cx="200" cy="330" r="5"/><circle cx="230" cy="330" r="5"/><circle cx="370" cy="330" r="5"/><circle cx="400" cy="330" r="5"/>
+  </g>
+  <g fill="#fff" font-family="Georgia, serif" text-anchor="middle">
+    <text x="300" y="472" font-size="58" font-weight="700">mandi @ 36</text>
+  </g>
+  <text x="300" y="535" fill="#ffd51a" font-family="Georgia, serif" font-size="31" font-style="italic" text-anchor="middle">Arabian Kitchen</text>
+</svg>

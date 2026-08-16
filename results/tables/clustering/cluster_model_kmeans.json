@@ -1,0 +1,182 @@
+{
+  "method": "tfidf_kmeans_v1",
+  "status": "derived_ml_unvalidated",
+  "params": {
+    "k_candidates": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "selected_k": 8,
+    "min_df": 5,
+    "max_df": 0.9,
+    "random_state": 42,
+    "documents_used": 11765,
+    "silhouette_sample_size": 2000
+  },
+  "silhouette_by_k": [
+    {
+      "k": 2,
+      "silhouette_score": 0.016261
+    },
+    {
+      "k": 3,
+      "silhouette_score": 0.016743
+    },
+    {
+      "k": 4,
+      "silhouette_score": 0.017204
+    },
+    {
+      "k": 5,
+      "silhouette_score": 0.024852
+    },
+    {
+      "k": 6,
+      "silhouette_score": 0.026806
+    },
+    {
+      "k": 7,
+      "silhouette_score": 0.028221
+    },
+    {
+      "k": 8,
+      "silhouette_score": 0.030927
+    }
+  ],
+  "selected_silhouette_score": 0.030927,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "size": 6627,
+      "top_terms": [
+        "food",
+        "good",
+        "place",
+        "mandi",
+        "service",
+        "awesome",
+        "great",
+        "worst",
+        "excellent",
+        "experience"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "size": 320,
+      "top_terms": [
+        "good",
+        "mutton",
+        "fried mutton",
+        "fried onions",
+        "fried piece",
+        "friend",
+        "friendly",
+        "friendly helpful",
+        "fried mandi",
+        "friendly staff"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "size": 607,
+      "top_terms": [
+        "food",
+        "good food",
+        "good",
+        "tasty",
+        "food good",
+        "tasty food",
+        "awesome food",
+        "awesome",
+        "service",
+        "ambience"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "size": 2208,
+      "top_terms": [
+        "mandi",
+        "mutton",
+        "chicken",
+        "try",
+        "juicy",
+        "mutton mandi",
+        "good",
+        "juicy mandi",
+        "mutton juicy",
+        "mandi good"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "size": 591,
+      "top_terms": [
+        "best",
+        "best mandi",
+        "mandi",
+        "hyderabad",
+        "mandi hyderabad",
+        "best place",
+        "place",
+        "place mandi",
+        "mandi town",
+        "town"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "size": 777,
+      "top_terms": [
+        "taste",
+        "good taste",
+        "good",
+        "taste good",
+        "great taste",
+        "great",
+        "awesome taste",
+        "awesome",
+        "food",
+        "mandi"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "size": 397,
+      "top_terms": [
+        "nice",
+        "nice food",
+        "nice place",
+        "food",
+        "place",
+        "nice taste",
+        "nice mandi",
+        "taste",
+        "food nice",
+        "mandi"
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "size": 238,
+      "top_terms": [
+        "delicious",
+        "delicious food",
+        "food",
+        "food delicious",
+        "delicious mandi",
+        "mandi delicious",
+        "mandi",
+        "good",
+        "good delicious",
+        "awesome delicious"
+      ]
+    }
+  ]
+}

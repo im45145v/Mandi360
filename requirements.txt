@@ -1,0 +1,9 @@
+pytest
+scikit-learn
+openai
+pandas
+streamlit
+plotly
+python-dotenv
+matplotlib
+wordcloud
