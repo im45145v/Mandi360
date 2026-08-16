@@ -11,7 +11,8 @@ if str(ROOT) not in sys.path:
 import pandas as pd
 import streamlit as st
 
-from app.theme import apply_theme, banner, business_dataframe, data_tag
+from app.display import business_dataframe
+from app.theme import apply_theme, banner, data_tag
 from src.agents import orchestrator
 from src.agents.llm_client import LLMNotConfiguredError, make_openai_client
 

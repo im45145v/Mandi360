@@ -12,7 +12,8 @@ import plotly.express as px
 import streamlit as st
 
 from app.data_loader import load_anomalies
-from app.theme import CHART_SEQUENCE, apply_theme, banner, business_dataframe, data_tag
+from app.display import business_dataframe
+from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
 
 apply_theme("Early-Warning Center")
 banner("Early-Warning Center", "Unusual branch-month changes in reviews, ratings, and customer mood")

@@ -12,7 +12,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from app.theme import CHART_SEQUENCE, apply_theme, banner, business_dataframe, data_tag
+from app.display import business_dataframe
+from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
 from src.agents import tools
 from src.config.settings import DEFAULT_SOURCES
 

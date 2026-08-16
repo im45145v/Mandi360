@@ -26,7 +26,8 @@ from app.data_loader import (
     load_review_topics,
     load_topic_model,
 )
-from app.theme import CHART_SEQUENCE, apply_theme, banner, branch_label, business_dataframe, data_tag
+from app.display import branch_label, business_dataframe
+from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
 from app.visuals import show_wordcloud
 
 apply_theme("Negative Insights")

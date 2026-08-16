@@ -13,7 +13,8 @@ import plotly.express as px
 import streamlit as st
 
 from app.data_loader import load_association_rules, load_cluster_model
-from app.theme import CHART_SEQUENCE, apply_theme, banner, business_dataframe, data_tag
+from app.display import business_dataframe
+from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
 
 apply_theme("Data Mining")
 banner("Data Mining for Customer Patterns", "Recurring review groups and issues that appear together")

@@ -13,7 +13,8 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from app.data_loader import load_anomalies, load_forecasts
-from app.theme import GOLD, MAROON, TEAL, apply_theme, banner, branch_label, data_tag
+from app.display import branch_label
+from app.theme import GOLD, MAROON, TEAL, apply_theme, banner, data_tag
 
 apply_theme("Predictive Analysis")
 banner("Predictive Analysis: Business Outlook", "Expected rating direction and branch risk signals")

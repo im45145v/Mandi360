@@ -13,7 +13,8 @@ import plotly.express as px
 import streamlit as st
 
 from app.data_loader import load_review_aspects, load_topic_model
-from app.theme import CHART_SEQUENCE, apply_theme, banner, branch_label, business_dataframe, data_tag
+from app.display import branch_label, business_dataframe
+from app.theme import CHART_SEQUENCE, apply_theme, banner, data_tag
 
 apply_theme("Customer Themes")
 banner("Customer Themes", "Recurring customer topics and experience areas")
