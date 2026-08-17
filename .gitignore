@@ -3,3 +3,9 @@
 !.env.example
 __pycache__/
 .pytest_cache/
+.DS_Store
+tmp/
+scripts/__pycache__/
+results/*_a11y*.json
+results/*render*/
+results/*_Presentation_*.pptx.inspect.ndjson
