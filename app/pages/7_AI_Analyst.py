@@ -14,7 +14,7 @@ import streamlit as st
 from app.display import business_dataframe
 from app.theme import apply_theme, banner, data_tag
 from src.agents import orchestrator
-from src.agents.llm_client import LLMNotConfiguredError, make_openai_client
+from src.agents.llm_client import LLMNotConfiguredError, make_llm_client
 
 apply_theme("AI Analyst")
 banner("AI Analyst", "Ask management questions and receive evidence-grounded answers")
@@ -31,7 +31,7 @@ question = st.text_input(
 
 if st.button("Investigate", type="primary"):
     try:
-        llm_client = make_openai_client()
+        llm_client = make_llm_client()
     except LLMNotConfiguredError:
         st.error(
             "The AI answer service is not configured in this environment. Showing the evidence summary "
